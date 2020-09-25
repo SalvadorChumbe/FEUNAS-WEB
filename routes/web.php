@@ -6,7 +6,7 @@ use App\Models\role;
 use App\Models\permiso;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('eventos/index');
 });
 
 Auth::routes();
