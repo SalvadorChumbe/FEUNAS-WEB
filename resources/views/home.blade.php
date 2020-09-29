@@ -254,12 +254,12 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
+                                                <th>Nombres y Apellidos</th>
+                                                <th>Escuela Profesional</th>
                                                 <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>Edad</th>
+                                                <th>Año de Ingreso</th>
+                                                <th>Deuda al Feunas</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
