@@ -6,12 +6,28 @@ use App\Models\role;
 use App\Models\permiso;
 
 Route::get('/', function () {
-    return view('eventos/index');
+    return view('welcome');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/eventos/index', function () {
+    return view('eventos.index');
+});
+
+Route::get('/auth/login', function () {
+    return view('auth.login');
+});
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 route::get('/roles', function(){
     /*

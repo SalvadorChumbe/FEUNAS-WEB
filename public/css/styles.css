@@ -67,7 +67,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  background-image: url(Tingales.png);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -470,7 +469,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {

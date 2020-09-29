@@ -1,13 +1,15 @@
-@extends('layouts.app')
+<html >
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-@section('content')
-<div class="container">
+<div class="container" style="width:800px" >
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card" >
+                <div class="card-header" style="background-color:#FFA310">{{ __('Login') }} 
+                <a href="welcome" style="margin-left:80%">Atras</a>
+                </div>
 
-                <div class="card-body">
+                <div class="card-body" style="background-color:#DDE100">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -26,7 +28,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Codigo Universitario') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -70,4 +72,4 @@
         </div>
     </div>
 </div>
-@endsection
+</html>

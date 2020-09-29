@@ -1,13 +1,14 @@
-@extends('layouts.app')
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-@section('content')
-<div class="container">
+<div class="container" style="width:850px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header" style="background-color:#FFA310">{{ __('Register') }}
+                <a href="welcome" style="margin-left:80%">Atras</a>
+                </div>
 
-                <div class="card-body">
+                <div class="card-body" style="background-color:#DDE100">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -40,7 +41,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Código') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -54,7 +55,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Contraseña') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Código') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
@@ -74,4 +75,3 @@
         </div>
     </div>
 </div>
-@endsection

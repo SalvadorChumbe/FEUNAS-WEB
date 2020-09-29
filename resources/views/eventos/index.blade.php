@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('scripts')
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{asset('fullcalendar/core/main.css')}}">
 <link rel="stylesheet" href="{{asset('fullcalendar/daygrid/main.css')}}">
@@ -81,10 +79,8 @@
 
     </script>
 
-@endsection
 
-@section('content')
-<div class="row">
+<div class="row" style="background-color:#20c997">
             <div class="col"></div>
             <div class="col-7"> <div id="calendar" ></div> </div>
             <div class="col"></div>
@@ -118,5 +114,3 @@
       </div>
     </div>
   </div>
-
-@endsection
