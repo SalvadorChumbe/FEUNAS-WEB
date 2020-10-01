@@ -54,7 +54,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Salir') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -256,7 +256,7 @@
                                             <tr>
                                                 <th>Nombres y Apellidos</th>
                                                 <th>Escuela Profesional</th>
-                                                <th>Office</th>
+                                                <th>Universidad</th>
                                                 <th>Edad</th>
                                                 <th>Año de Ingreso</th>
                                                 <th>Deuda al Feunas</th>
@@ -264,12 +264,12 @@
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
+                                                <th>Names and Last names</th>
+                                                <th>Profetional School</th>
+                                                <th>University</th>
                                                 <th>Age</th>
                                                 <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>Debt to Feunas</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
