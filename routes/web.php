@@ -6,12 +6,28 @@ use App\Models\role;
 use App\Models\permiso;
 
 Route::get('/', function () {
-    return view('eventos/index');
+    return view('welcome');
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/eventos/index', function () {
+    return view('eventos.index');
+});
+
+Route::get('/auth/login', function () {
+    return view('auth.login');
+});
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 route::get('/roles', function(){
     /*
@@ -58,7 +74,7 @@ route::get('/roles', function(){
      * $user->roles()->sync([id_rol_1, id_rol_n]);
      */
     
-     /*
+    /* 
     return permiso::create([
         'name' => 'Crear Actividad',
         'slug' => 'actividad.create',
@@ -66,11 +82,29 @@ route::get('/roles', function(){
     ]);
     */
 
+    /*
     return permiso::create([
         'name' => 'Editar Actidad',
         'slug' => 'actividad.update',
         'description' => 'Administrador puede editar una actividad',
     ]);
+    */
+    
+    /*
+    return permiso::create([
+        'name' => 'Borrar Actidad',
+        'slug' => 'actividad.delete',
+        'description' => 'Administrador puede borrar una actividad',
+    ]);
+    */
+    
+    /*
+    return permiso::create([
+        'name' => 'Editar deuda Alumno',
+        'slug' => 'Editar.deuda',
+        'description' => 'Administrador o tesorero puede editar la deuda de un estudiante',
+    ]);
+    */
 
     $rol = role::find(9);
     return $rol;
