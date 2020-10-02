@@ -71,12 +71,31 @@
             ]
 
 
-        
-
           });
           calendar.setOption("locale","Es"),
   
           calendar.render();
+          
+          $('#btnAgregar').click(function(){
+            recolectarDatosGUI("POST");
+          });
+
+          function recolectarDatosGUI(method){
+            nuevoEvento={
+              id:$('#txtID').val(),
+              title:$('#txtTitulo').val(),
+              descripcio:$('#txtDescripcion').val(),
+              color:$('#txtColor').val(),
+              textColor:'#FFFFFF',
+              start:$('#txtFecha').val()+" "+$('#txtHora').val(),
+              end:$('#txtFecha').val()+" "+$('#txtHora').val(),
+
+              '_token':$("meta[name='csrf-token']").attr("content"),
+              '_method':method
+
+            }
+            console.log(nuevoEvento);
+          }
 
         });
 
@@ -90,20 +109,37 @@
             <div class="col"></div>
 </div>           
 
-
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Datos del evento</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          ID:
+          <input type="text" name="txtID" id="txtID">
+          <br/>
+          Fecha:
+          <input type="text" name="txtFecha" id="txtFecha">
+          <br/>
+          Titulo:
+          <input type="text" name="txtTitulo" id="txtTitulo">
+          <br/>
+          Hora
+          <input type="text" name="txtHora" id="txtHora">
+          <br/>
+          Descripcion:
+          <textarea name="txtDescription" id="txtDescription" cols="30" rows="10"></textarea>
+          <br/>
+          Color:
+          <input type="color" name="txtColor" id="txColor">
+          <br/>
         </div>
+
         <div class="modal-footer">
 
             <button id="btnAgregar" class="btn-success">Agregar</button>
