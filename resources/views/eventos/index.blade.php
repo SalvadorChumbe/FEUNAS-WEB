@@ -1,4 +1,5 @@
-      
+@extends('layouts.app')
+@section('scripts')    
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{asset('fullcalendar/core/main.css')}}">
@@ -75,7 +76,7 @@
           calendar.setOption("locale","Es"),
   
           calendar.render();
-          
+
           $('#btnAgregar').click(function(){
             recolectarDatosGUI("POST");
           });
@@ -100,9 +101,10 @@
         });
 
     </script>
+@endsection
 
 
-
+@section('content')
 <div class="row">
             <div class="col"></div>
             <div class="col-5"> <div id="calendar" ></div> </div>
@@ -151,5 +153,7 @@
       </div>
     </div>
   </div>
+
+@endsection
 
  

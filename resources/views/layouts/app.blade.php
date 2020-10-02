@@ -74,8 +74,7 @@ php artisan sodium_crypto_kx_server_session_keys<head>
         </nav>
 
         <main class="py-4">
-        <div class="container">
-            @yield('scripts')
+            @yield('content')
         </main>
     </div>
 </body>
