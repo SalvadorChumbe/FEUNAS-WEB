@@ -1,3 +1,4 @@
+      
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{asset('fullcalendar/core/main.css')}}">
@@ -70,6 +71,8 @@
             ]
 
 
+        
+
           });
           calendar.setOption("locale","Es"),
   
@@ -80,9 +83,10 @@
     </script>
 
 
-<div class="row" style="background-color:#20c997">
+
+<div class="row">
             <div class="col"></div>
-            <div class="col-7"> <div id="calendar" ></div> </div>
+            <div class="col-5"> <div id="calendar" ></div> </div>
             <div class="col"></div>
 </div>           
 
@@ -111,3 +115,5 @@
       </div>
     </div>
   </div>
+
+ 
