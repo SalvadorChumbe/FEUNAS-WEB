@@ -107,13 +107,10 @@
         <div class="modal-footer">
 
             <button id="btnAgregar" class="btn-success">Agregar</button>
-            <button id="btModificar" class="btn-success">Modificar</button>
+            <button id="btModificar" class="btn-warning">Modificar</button>
             <button id="btnBorrar" class="btn-danger">Borrar</button>
             <button id="btnCancelar" class="btn-default">Agregar</button>
 
-
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
