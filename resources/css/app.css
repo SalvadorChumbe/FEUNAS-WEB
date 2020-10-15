@@ -20,9 +20,9 @@
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
+  --cyan: #66e49b;
+  --white: rgb(159, 207, 26);
+  --gray: #d0ddeb;
   --gray-dark: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;

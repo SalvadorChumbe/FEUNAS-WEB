@@ -73,23 +73,34 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
+
                         <div class="sb-sidenav-menu-heading">ACTIVIDADES</div>
-                        <a class="nav-link" href="eventos/index">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Cronograma
-                        </a>
-                        <div class="sb-sidenav-menu-heading">INTERFAZ</div>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Layouts
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                            </nav>
-                        </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseActivities" aria-expanded="false" aria-controls="collapseActivities">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Cronograma
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseActivities" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="eventos/index">Calendario</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Lista de Actividades</a>
+                                </nav>
+                            </div>
+
+                        <div class="sb-sidenav-menu-heading">ESTADO DE DEUDA</div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Reporte
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Deudas</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Actividades no asistidas</a>
+                                </nav>
+                            </div>
+
+                        <div class="sb-sidenav-menu-heading">PAGINAS UNAS</div>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Paginas
@@ -97,35 +108,29 @@
                         </a>
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                    Error
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="401.html">401 Page</a>
-                                        <a class="nav-link" href="404.html">404 Page</a>
-                                        <a class="nav-link" href="500.html">500 Page</a>
-                                    </nav>
-                                </div>
+                                <a class="nav-link collapsed" href="https://aulavirtual.unas.edu.pe" target="_blank">Aula virtual</a>
+                                <a class="nav-link collapsed" href="https://academico.unas.edu.pe/login" target="_blank">DICDA</a>
+                                <a class="nav-link collapsed" href="https://portal.unas.edu.pe/correo-institucional" target="_blank">Correo Institucional</a>
                             </nav>
                         </div>
+
                         <div class="sb-sidenav-menu-heading">FACULTADES</div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFacultades" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Lista de Facultades
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+
+                        <div class="collapse" id="collapseFacultades" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            <a class="nav-link" href="Facultades/administracion">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Administración
+                        </a>
+
                         <a class="nav-link" href="Facultades/agronomia">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Agronomia
-                        </a>
-                        <a class="nav-link" href="Facultades/zootecnia">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Zootecnia
-                        </a>
-                        <a class="nav-link" href="Facultades/industrias">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Industrias Alimentarias
-                        </a>
-                        <a class="nav-link" href="Facultades/recursos">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Recursos Naturales R.
+                            Agronomía
                         </a>
 
                         <a class="nav-link" href="Facultades/ambiental">
@@ -133,24 +138,9 @@
                             Ambiental
                         </a>
 
-                        <a class="nav-link" href="Facultades/forestal">
+                        <a class="nav-link" href="Facultades/suelos">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Forestal
-                        </a>
-
-                        <a class="nav-link" href="Facultades/ambiental">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Conservacion de Suelos y Aguas
-                        </a>
-
-                        <a class="nav-link" href="Facultades/sistemas">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Informatica y Sistemas
-                        </a>
-                        
-                        <a class="nav-link" href="Facultades/mecanica">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Mecanica Eléctrica
+                            Conservación de Suelos y Aguas
                         </a>
 
                         <a class="nav-link" href="Facultades/contabilidad">
@@ -158,16 +148,45 @@
                             Contabilidad
                         </a>
 
-                        <a class="nav-link" href="Facultades/administracion">
+                        <a class="nav-link" href="Facultades/economia">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Administración
+                            Economía
                         </a>
 
-                        
-                        <a class="nav-link" href="Facultades/rconomia">
+                        <a class="nav-link" href="Facultades/forestal">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Economia
+                            Forestal
                         </a>
+
+                        <a class="nav-link" href="Facultades/industrias">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Industrias Alimentarias
+                        </a>
+
+                        <a class="nav-link" href="Facultades/sistemas">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Informática y Sistemas
+                        </a>
+
+                        <a class="nav-link" href="Facultades/mecanica">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Mecánica Eléctrica
+                        </a>
+
+                        <a class="nav-link" href="Facultades/recursos">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Recursos Naturales R.
+                        </a>
+
+                        <a class="nav-link" href="Facultades/zootecnia">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Zootecnia
+                        </a>
+                            </nav>
+                        </div>
+                        
+                        
+                        
 
                     </div>
                 </div>
@@ -181,69 +200,12 @@
 
         <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid">
-                        <h1 class="mt-4">BIENVENIDO AL SITIO WEB DE LA FEDERACION DE ESTUDIANTES UNASINOS</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard</li>
+                    <div class="container-fluid" style="background-color:#d0ddeb">
+                        <h1 class="mt-0" align="center">¡¡ PAGINA DE LA FEDERACION DE ESTUDIANTES UNASINOS !!</h1>
+                        <ol class="breadcrumb mb-4" style="background-color:#66e49b">
+                            <font face="Comic Sans MS,arial,verdana">Bienvenido al sitio web de la FEUNAS...</font>
                         </ol>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Primary Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Warning Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Success Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Danger Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-area mr-1"></i>
-                                        Area Chart Example
-                                    </div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-bar mr-1"></i>
-                                        Bar Chart Example
-                                    </div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
