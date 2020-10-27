@@ -10,7 +10,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>FEUNAS-WEB</title>
+    <title>FEUNAS | HOME</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -26,11 +26,14 @@
 <body>
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="home">FEUNAS WEB SYSTEM</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+            
             <a class="navbar-brand" href="{{ url('/') }}">
                     INICIO
             </a>
-
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -83,7 +86,7 @@
                             <div class="collapse" id="collapseActivities" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="eventos/index">Calendario</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Lista de Actividades</a>
+                                    <a class="nav-link" href="eventos/calendar">Lista de Actividades</a>
                                 </nav>
                             </div>
 
@@ -95,7 +98,7 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Deudas</a>
+                                    <a class="nav-link" href="reportes/deudas">Deudas</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Actividades no asistidas</a>
                                 </nav>
                             </div>

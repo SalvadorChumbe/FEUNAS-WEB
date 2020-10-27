@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" >
-                <div class="card-header" style="background-color:#FFA310">{{ __('Login') }} 
+                <div class="card-header" style="background-color:#FFA210">{{ __('Login') }} 
                 <a href="welcome" style="margin-left:80%">Atras</a>
                 </div>
 
@@ -72,4 +72,13 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
 </html>

@@ -23,8 +23,16 @@ Route::get('/eventos/index', function () {
     return view('eventos.index');
 });
 
+Route::get('/eventos/calendar', function () {
+    return view('eventos.calendar');
+});
+
 Route::get('/auth/login', function () {
     return view('auth.login');
+});
+
+Route::get('reportes/deudas', function () {
+    return view('reportes.deudas');
 });
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
