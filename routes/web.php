@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
+
+
 use App\Models\role;
 use App\Models\permiso;
 
@@ -19,9 +21,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/eventos/index', function () {
-    return view('eventos.index');
-});
+Route::get('eventos', [EventosController::class, 'eventos']); 
+Route::resource('eventos','EventosController');
 
 Route::get('/auth/login', function () {
     return view('auth.login');
