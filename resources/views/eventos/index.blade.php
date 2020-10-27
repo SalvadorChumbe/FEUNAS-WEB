@@ -28,7 +28,9 @@
                 left:'prev,next today Miboton',
                 center:'title',
                 right:'dayGridMonth,timeGridWeek,timeGridDay'
-            },
+              },
+
+               
             customButtons:{
                 Miboton:{
                     text:"TODAS LAS ACTIVIDADES",
@@ -39,6 +41,7 @@
                 }
             },
             dateClick:function(info){
+              $('#txtFecha').val(info.dateStr);
               $('#exampleModal').modal();
               console.log(info);
               calendar.addEvent({title:"evento x", date:info.dateStr})
@@ -91,7 +94,7 @@
               start:$('#txtFecha').val()+" "+$('#txtHora').val(),
               end:$('#txtFecha').val()+" "+$('#txtHora').val(),
 
-              '_token':$("meta[name='csrf-token']").attr("content"),
+              '_token':$(" meta[name='csrf-token']").attr("content"),
               '_method':method
 
             }
@@ -116,12 +119,12 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Datos del evento</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Datos del evento</h    5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body">  
           ID:
           <input type="text" name="txtID" id="txtID">
           <br/>
@@ -141,15 +144,14 @@
           <input type="color" name="txtColor" id="txColor">
           <br/>
         </div>
-
         <div class="modal-footer">
 
-            <button id="btnAgregar" class="btn-success">Agregar</button>
-            <button id="btModificar" class="btn-warning">Modificar</button>
-            <button id="btnBorrar" class="btn-danger">Borrar</button>
-            <button id="btnCancelar" class="btn-default">Agregar</button>
+            <button id="btnAgregar" class="btn btn-success">Agregar</button>
+            <button id="btModificar" class="btn btn-warning">Modificar</button>
+            <button id="btnBorrar" class="btn btn-danger">Borrar</button>
+            <button id="btnCancelar" class="btn btn-default">Cancelar</button>
 
-        </div>
+          </div>
       </div>
     </div>
   </div>
