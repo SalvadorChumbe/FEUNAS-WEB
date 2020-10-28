@@ -22,7 +22,12 @@
 <body>
     <div id="app">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <div class="container">
+
+            
+
+            <a class="navbar-brand" href="{{ url('/home') }}">FEUNAS WEB SYSTEM</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+
                 <a class="navbar-brand" href="{{ url('/') }}">
                     INICIO
                 </a>
@@ -70,7 +75,7 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
+            
         </nav>
 
         <main class="py-4">

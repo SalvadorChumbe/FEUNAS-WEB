@@ -1,15 +1,15 @@
 <html >
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-<div class="container" style="width:800px" >
+<div class="container" style="width:800px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" >
-                <div class="card-header" style="background-color:#FFA210">{{ __('Login') }} 
+                <div class="card-header" style="background-color:#d0ddeb">{{ __('Login') }} 
                 <a href="welcome" style="margin-left:80%">Atras</a>
                 </div>
 
-                <div class="card-body" style="background-color:#DDE100">
+                <div class="card-body" style="background-color:f8f9fa">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

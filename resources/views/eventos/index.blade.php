@@ -16,20 +16,17 @@
 <script src="{{asset('fullcalendar/timegrid/main.js')}}" defer></script>
 
 <script>
-
         document.addEventListener('DOMContentLoaded', function() {
           var calendarEl = document.getElementById('calendar');
   
           var calendar = new FullCalendar.Calendar(calendarEl, {
             plugins: [ 'dayGrid', 'interaction', 'timeGrid', 'list' ],
             //defaultView:'timeGridDay'
-
             header:{
                 left:'prev,next today Miboton',
                 center:'title',
                 right:'dayGridMonth,timeGridWeek,timeGridDay'
               },
-
                
             customButtons:{
                 Miboton:{
@@ -47,17 +44,13 @@
               calendar.addEvent({title:"evento x", date:info.dateStr})
             },
             eventClick:function(info){
-
               console.log(info);
               console.log(info.event.title);
               console.log(info.event.start);
-
               console.log(info.event.end);
               console.log(info.event.textColor);
               console.log(info.event.backgroundColor);
-
               console.log(info.event.extendedProps.descripcion);
-
             },
             events:[
               {
@@ -73,17 +66,13 @@
                 descripcion:"descripcion del evento 2"
               }
             ]
-
-
           });
           calendar.setOption("locale","Es"),
   
           calendar.render();
-
           $('#btnAgregar').click(function(){
             recolectarDatosGUI("POST");
           });
-
           function recolectarDatosGUI(method){
             nuevoEvento={
               id:$('#txtID').val(),
@@ -93,16 +82,12 @@
               textColor:'#FFFFFF',
               start:$('#txtFecha').val()+" "+$('#txtHora').val(),
               end:$('#txtFecha').val()+" "+$('#txtHora').val(),
-
               '_token':$(" meta[name='csrf-token']").attr("content"),
               '_method':method
-
             }
             console.log(nuevoEvento);
           }
-
         });
-
     </script>
 @endsection
 
@@ -157,5 +142,3 @@
   </div>
 
 @endsection
-
- 

@@ -21,8 +21,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('eventos', [EventosController::class, 'eventos']); 
-Route::resource('eventos','EventosController');
+Route::get('eventos/index', [EventosController::class, 'eventos/index']); 
+Route::resource('eventos/index','EventosController');
 
 Route::get('/eventos/calendar', function () {
     return view('eventos.calendar');
@@ -34,6 +34,54 @@ Route::get('/auth/login', function () {
 
 Route::get('reportes/deudas', function () {
     return view('reportes.deudas');
+});
+
+Route::get('/facultades/administracion', function () {
+    return view('facultades.administracion');
+});
+
+Route::get('/facultades/agronomia', function () {
+    return view('facultades.agronomia');
+});
+
+Route::get('/facultades/ambiental', function () {
+    return view('facultades.ambiental');
+});
+
+Route::get('/facultades/suelos', function () {
+    return view('facultades.suelos');
+});
+
+Route::get('/facultades/contabilidad', function () {
+    return view('facultades.contabilidad');
+});
+
+Route::get('/facultades/economia', function () {
+    return view('facultades.economia');
+});
+
+Route::get('/facultades/forestal', function () {
+    return view('facultades.forestal');
+});
+
+Route::get('/facultades/industrias', function () {
+    return view('facultades.industrias');
+});
+
+Route::get('/facultades/sistemas', function () {
+    return view('facultades.sistemas');
+});
+
+Route::get('/facultades/mecanica', function () {
+    return view('facultades.mecanica');
+});
+
+Route::get('/facultades/recursos', function () {
+    return view('facultades.recursos');
+});
+
+Route::get('/facultades/zootecnia', function () {
+    return view('facultades.zootecnia');
 });
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

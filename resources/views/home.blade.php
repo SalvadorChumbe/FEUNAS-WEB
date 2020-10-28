@@ -126,62 +126,62 @@
 
                         <div class="collapse" id="collapseFacultades" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                            <a class="nav-link" href="Facultades/administracion">
+                            <a class="nav-link" href="facultades/administracion">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Administración
                         </a>
 
-                        <a class="nav-link" href="Facultades/agronomia">
+                        <a class="nav-link" href="facultades/agronomia">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Agronomía
                         </a>
 
-                        <a class="nav-link" href="Facultades/ambiental">
+                        <a class="nav-link" href="facultades/ambiental">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Ambiental
                         </a>
 
-                        <a class="nav-link" href="Facultades/suelos">
+                        <a class="nav-link" href="facultades/suelos">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Conservación de Suelos y Aguas
                         </a>
 
-                        <a class="nav-link" href="Facultades/contabilidad">
+                        <a class="nav-link" href="facultades/contabilidad">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Contabilidad
                         </a>
 
-                        <a class="nav-link" href="Facultades/economia">
+                        <a class="nav-link" href="facultades/economia">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Economía
                         </a>
 
-                        <a class="nav-link" href="Facultades/forestal">
+                        <a class="nav-link" href="facultades/forestal">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Forestal
                         </a>
 
-                        <a class="nav-link" href="Facultades/industrias">
+                        <a class="nav-link" href="facultades/industrias">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Industrias Alimentarias
                         </a>
 
-                        <a class="nav-link" href="Facultades/sistemas">
+                        <a class="nav-link" href="facultades/sistemas">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Informática y Sistemas
                         </a>
 
-                        <a class="nav-link" href="Facultades/mecanica">
+                        <a class="nav-link" href="facultades/mecanica">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Mecánica Eléctrica
                         </a>
 
-                        <a class="nav-link" href="Facultades/recursos">
+                        <a class="nav-link" href="facultades/recursos">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Recursos Naturales R.
                         </a>
 
-                        <a class="nav-link" href="Facultades/zootecnia">
+                        <a class="nav-link" href="facultades/zootecnia">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Zootecnia
                         </a>
@@ -203,10 +203,9 @@
 
         <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid" style="background-color:#d0ddeb">
-                        <h1 class="mt-0" align="center">¡¡ PAGINA DE LA FEDERACION DE ESTUDIANTES UNASINOS !!</h1>
-                        <ol class="breadcrumb mb-4" style="background-color:#66e49b">
-                            <font face="Comic Sans MS,arial,verdana">Bienvenido al sitio web de la FEUNAS...</font>
+                    <div class="container-fluid" style="background-color:f8f8fa">
+                        <ol class="breadcrumb mt-4 mb-4" style="background-color:#66e49b">
+                            <font face="Comic Sans MS,arial,verdana">Bienvenido al sitio web de la Federacion de Estudiantes de la UNAS | FEUNAS</font>
                         </ol>
                         
                         <div class="card mb-4">
