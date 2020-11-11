@@ -15,14 +15,22 @@ Route::get('welcome', function () {
     return view('welcome');
 });
 
+
+
 Auth::routes();
 
 Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('eventos/index', [EventosController::class, 'eventos/index']); 
+Route::get('/eventos', 'EventosController@index'); 
+Route::post('/eventos/registrar', 'EventosController@store'); 
+Route::get('/eventos/show', 'EventosController@show');
+
+
 Route::resource('eventos/index','EventosController');
+
+
 
 Route::get('/eventos/calendar', function () {
     return view('eventos.calendar');

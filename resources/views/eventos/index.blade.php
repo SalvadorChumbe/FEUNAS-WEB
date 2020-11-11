@@ -52,7 +52,7 @@
               console.log(info.event.backgroundColor);
               console.log(info.event.extendedProps.descripcion);
             },
-            events:[
+            /*events:[
               {
                 title:"Mi evento 1",
                 start:"2020-09-13 12:30:00",
@@ -65,27 +65,42 @@
                 textColor:"#000000",
                 descripcion:"descripcion del evento 2"
               }
-            ]
+            ]*/
+            events:"{{url('/eventos/show')}}"
           });
           calendar.setOption("locale","Es"),
   
           calendar.render();
+
+          //recolectar informacion
           $('#btnAgregar').click(function(){
-            recolectarDatosGUI("POST");
+            objEvento=recolectarDatosGUI("POST");
+            EnviarInformacion('',objEvento);
           });
           function recolectarDatosGUI(method){
             nuevoEvento={
               id:$('#txtID').val(),
               title:$('#txtTitulo').val(),
-              descripcio:$('#txtDescripcion').val(),
+              descripcion:$('#txtDescripcion').val(),
               color:$('#txtColor').val(),
               textColor:'#FFFFFF',
               start:$('#txtFecha').val()+" "+$('#txtHora').val(),
-              end:$('#txtFecha').val()+" "+$('#txtHora').val(),
+              end:$('#txtEnd').val(),
               '_token':$(" meta[name='csrf-token']").attr("content"),
               '_method':method
             }
-            console.log(nuevoEvento);
+            return (nuevoEvento);
+          }
+          function EnviarInformacion(accion,objEvento){
+            $.ajax({
+              type:"POST",
+              url:"{{url('/eventos/registrar')}}"+accion,
+              data:objEvento,
+              success:function(msg){console.log(msg);},
+              error:function(){alert("hay un error");}
+            }
+            );
+
           }
         });
     </script>
@@ -120,13 +135,16 @@
           <input type="text" name="txtTitulo" id="txtTitulo">
           <br/>
           Hora
-          <input type="text" name="txtHora" id="txtHora">
+          <input type="time" name="txtHora" id="txtHora">
+          <br/>
+          Finaliza
+          <input type="time" name="txtEnd" id="txtEnd">
           <br/>
           Descripcion:
-          <textarea name="txtDescription" id="txtDescription" cols="30" rows="10"></textarea>
+          <textarea name="txtDescripcion" id="txtDescripcion" cols="30" rows="10"></textarea>
           <br/>
           Color:
-          <input type="color" name="txtColor" id="txColor">
+          <input type="color" name="txtColor" id="txtColor">
           <br/>
         </div>
         <div class="modal-footer">
@@ -135,6 +153,7 @@
             <button id="btModificar" class="btn btn-warning">Modificar</button>
             <button id="btnBorrar" class="btn btn-danger">Borrar</button>
             <button id="btnCancelar" class="btn btn-default">Cancelar</button>
+
 
           </div>
       </div>
