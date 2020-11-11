@@ -126,7 +126,7 @@
 
                         <div class="collapse" id="collapseFacultades" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                            <a class="nav-link" href="facultades/administracion">
+                            <a class="nav-link" href="../public/facultades/administracion">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Administración
                         </a>

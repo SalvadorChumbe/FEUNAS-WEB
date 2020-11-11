@@ -84,8 +84,8 @@
                                                 <th>Codigo</th>
                                                 <th>Escuela Profesional</th>
                                                 <th>Universidad</th>
-                                                <th>Año de Ingreso</th>
                                                 <th>Deuda al Feunas</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tfoot>
@@ -95,8 +95,8 @@
                                                 <th>Code</th>
                                                 <th>Profetional School</th>
                                                 <th>University</th>
-                                                <th>Start date</th>
                                                 <th>Debt to Feunas</th>
+                                                
                                             </tr>
                                         </tfoot>
                                         <tbody>
@@ -106,8 +106,8 @@
                                                 <td> {{ auth()->user()->code }} </td>
                                                 <td> {{ auth()->user()->faculty }} </td>
                                                 <td> UNAS </td>
-                                                <td> 2017 </td>
-                                                <td>$ 0.00</td>
+                                                <td>$ {{ auth()->user()->debt }}</td>
+                                                
                                             </tr>
                 </main>
                     <footer class="py-4 bg-light mt-auto">

@@ -23,8 +23,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public static function editardeuda($request){
+        $editUser = User::find($request->id_user);
+        $editUser->debt = $request->input('deuda');
+        $editUser->save();
+        
+    }
+
     public function roles(){
         return $this->belongsToMany('App\Models\role')->withTimesTamps();
     }
+
 
 }
