@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\evento;
 use Illuminate\Http\Request;
+
+
 
 class EventosController extends Controller
 {
@@ -15,9 +17,13 @@ class EventosController extends Controller
     {
         //
 
-        return view('eventos/index');
-    }
 
+        return view('eventos.index');
+        
+    }
+    public function listar(){
+        
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -36,7 +42,13 @@ class EventosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       //
+       $datosEvento=request()->except(['_token','_method']);
+       evento::insert($datosEvento);
+       print_r($datosEvento);  
+
+       
+
     }
 
     /**
@@ -45,9 +57,13 @@ class EventosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         //
+        $data['eventos']=evento::all();
+        return response()->json($data['eventos']);
+        
+
     }
 
     /**
