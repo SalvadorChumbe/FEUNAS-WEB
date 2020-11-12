@@ -106,7 +106,6 @@
     </script>
 @endsection
 
-
 @section('content')
 <div class="row">
             <div class="col"></div>
@@ -114,7 +113,7 @@
             <div class="col"></div>
 </div>           
 
-  <!-- Modal -->
+  <!--parte de Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -124,7 +123,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">  
+        <div class="modal-body show-row"> 
           ID:
           <input type="text" name="txtID" id="txtID">
           <br/>

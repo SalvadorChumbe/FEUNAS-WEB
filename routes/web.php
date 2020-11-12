@@ -2,95 +2,134 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
-
-
 use App\Models\role;
 use App\Models\permiso;
 
 Route::get('/', function () {
+
     return view('welcome');
+
 });
 
 Route::get('welcome', function () {
+
     return view('welcome');
+
 });
 
 
 
 Auth::routes();
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', 'HomeController@index');
 
+<<<<<<< HEAD
 Route::get('/eventos', 'EventosController@index'); 
 Route::post('/eventos/registrar', 'EventosController@store'); 
 Route::get('/eventos/show', 'EventosController@show');
 
+=======
+Route::get('eventos/index', [EventosController::class, 'eventos/index']); 
+>>>>>>> f2a1fd2da96f2a6240d154e78826f4d172e901f3
 
 Route::resource('eventos/index','EventosController');
 
 
 
 Route::get('/eventos/calendar', function () {
+
     return view('eventos.calendar');
+
 });
 
 Route::get('/auth/login', function () {
+  
     return view('auth.login');
+
 });
 
 Route::get('reportes/deudas', function () {
+
     return view('reportes.deudas');
+
 });
 
-Route::get('/facultades/administracion', function () {
-    return view('facultades.administracion');
-});
+Route::get('/facultades/administracion','AdministratorController@index');
+
+Route::post('/facultades/administracion/edit','UserController@update');
 
 Route::get('/facultades/agronomia', function () {
+
     return view('facultades.agronomia');
+
 });
 
 Route::get('/facultades/ambiental', function () {
+ 
     return view('facultades.ambiental');
+
 });
 
 Route::get('/facultades/suelos', function () {
+ 
     return view('facultades.suelos');
+
 });
 
 Route::get('/facultades/contabilidad', function () {
+ 
     return view('facultades.contabilidad');
+
 });
 
 Route::get('/facultades/economia', function () {
+   
     return view('facultades.economia');
+
 });
 
 Route::get('/facultades/forestal', function () {
+  
     return view('facultades.forestal');
+
 });
 
 Route::get('/facultades/industrias', function () {
+ 
     return view('facultades.industrias');
+
 });
 
 Route::get('/facultades/sistemas', function () {
+   
     return view('facultades.sistemas');
+
 });
 
 Route::get('/facultades/mecanica', function () {
+   
     return view('facultades.mecanica');
+
 });
 
 Route::get('/facultades/recursos', function () {
+   
     return view('facultades.recursos');
+
 });
 
 Route::get('/facultades/zootecnia', function () {
+   
     return view('facultades.zootecnia');
+
 });
+
+
+Route::resource('users','UserController');
+
+
+Route::get('users/{id}/edit/','UserController@edit');
+
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
