@@ -99,7 +99,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="reportes/deudas">Deudas</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Actividades no asistidas</a>
+                                    <a class="nav-link" href="reportes/inasistencias">Actividades no asistidas</a>
                                 </nav>
                             </div>
 
@@ -204,7 +204,7 @@
         <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid" style="background-color:f8f8fa">
-                        <ol class="breadcrumb mt-4 mb-4" style="background-color:#66e49b">
+                        <ol class="breadcrumb mt-4 mb-4" style="background-color:#9bcf21">
                             <font face="Comic Sans MS,arial,verdana">Bienvenido al sitio web de la Federacion de Estudiantes de la UNAS | FEUNAS</font>
                         </ol>
                         

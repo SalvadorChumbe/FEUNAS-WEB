@@ -43,6 +43,12 @@ Route::get('reportes/deudas', function () {
 
 });
 
+Route::get('reportes/inasistencias', function () {
+
+    return view('reportes.inasistencias');
+
+});
+
 Route::get('/facultades/administracion','AdministratorController@index');
 
 Route::post('/facultades/administracion/edit','UserController@update');
