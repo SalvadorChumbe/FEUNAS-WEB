@@ -23,14 +23,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-<<<<<<< HEAD
 Route::get('/eventos', 'EventosController@index'); 
+
 Route::post('/eventos/registrar', 'EventosController@store'); 
+
 Route::get('/eventos/show', 'EventosController@show');
 
-=======
-Route::get('eventos/index', [EventosController::class, 'eventos/index']); 
->>>>>>> f2a1fd2da96f2a6240d154e78826f4d172e901f3
 
 Route::resource('eventos/index','EventosController');
 

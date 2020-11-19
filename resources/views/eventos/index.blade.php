@@ -1,5 +1,9 @@
 @extends('layouts.app')
-@section('scripts')    
+@section('scripts')  
+
+<link href="css/styles.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{asset('fullcalendar/core/main.css')}}">
@@ -76,6 +80,7 @@
           $('#btnAgregar').click(function(){
             objEvento=recolectarDatosGUI("POST");
             EnviarInformacion('',objEvento);
+            console.log('exit');
           });
           function recolectarDatosGUI(method){
             nuevoEvento={
@@ -89,6 +94,7 @@
               '_token':$(" meta[name='csrf-token']").attr("content"),
               '_method':method
             }
+
             return (nuevoEvento);
           }
           function EnviarInformacion(accion,objEvento){

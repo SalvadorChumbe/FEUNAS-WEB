@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
+use App\Models\evento;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -14,10 +15,13 @@ class HomeController extends Controller
 
     public function index()
     {
-        
-        //dd($usuarios);
-        return view('home');
+        $event = DB::select('SELECT * FROM eventos ORDER BY start ASC');
+
+        //dd($event);
+        return view('home', compact('event'));
     }
+
+
 
 
 
